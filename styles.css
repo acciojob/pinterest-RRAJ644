@@ -1,1 +1,57 @@
-/*  your css code here. If applicable */
+/* Hero container */
+.hero {
+  display: flex; /* Enables Flexbox */
+  justify-content: space-between; /* Aligns image and text content */
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Full viewport height */
+  padding: 20px; /* Adds padding inside the container */
+  box-sizing: border-box; /* Includes padding in width/height calculations */
+}
+
+/* Hero image */
+.hero-image {
+  width: 50%; /* Takes 50% of the container width */
+  height: 100%; /* Full height of the container */
+  object-fit: cover; /* Ensures the image is cropped proportionally */
+  border-radius: 10px; /* Adds rounded corners to the image */
+}
+
+/* Hero content */
+.hero-content {
+  width: 40%; /* Takes 40% of the container width */
+  text-align: left; /* Aligns text to the left */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers text vertically */
+  gap: 10px; /* Adds space between text elements */
+}
+
+/* Headline */
+.hero-content h1 {
+  font-size: 2.5rem; /* Headline size */
+  margin: 0; /* Removes default margin */
+}
+
+/* Paragraph */
+.hero-content p {
+  font-size: 1.2rem; /* Description size */
+  margin: 0; /* Removes default margin */
+}
+
+/* Button */
+.hero-button {
+  display: inline-block; /* Makes it an inline-block element */
+  background-color: red; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Adds padding */
+  border-radius: 5px; /* Adds rounded corners */
+  text-decoration: none; /* Removes underline from link */
+  font-size: 1rem; /* Font size */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease; /* Adds hover transition */
+	text-align:center;
+}
+
+.hero-button:hover {
+  background-color: darkred; /* Darkens background on hover */
+}
